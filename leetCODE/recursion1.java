@@ -1,13 +1,14 @@
-public class recursion1{
-    public static void printNumbers(int n){
-        if(n==0){
+public class recursion1 {
+    public static void printSum(int i, int n, int sum) {
+        sum += i;
+        if (i == n) {
+            System.out.println(sum);
             return;
         }
-        System.out.println(n);
-        printNumbers(n-1);
+        printSum(i + 1, n, sum);
     }
+
     public static void main(String[] args) {
-        int n = 5;
-        printNumbers(n);
+        printSum(1, 10, 0);
     }
 }
