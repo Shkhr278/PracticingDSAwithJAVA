@@ -20,7 +20,7 @@ public class practice {
         System.out.println("hello " + name);
         System.out.println("your age: " + age);
         System.out.println("your gpa is: " + gpa);
-        // System.out.println("Student: " + isStudent);
+         System.out.println("Student: " + isStudent);
 
         sc.close();
 
