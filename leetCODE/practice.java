@@ -3,24 +3,19 @@ import java.util.*;
 public class practice {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner (System.in);
 
-        System.out.print("Enter your name:");
-        String name = sc.nextLine();
+        double r;
 
-        System.out.print("Enter your age:");
-        int age = sc.nextInt();
+        System.out.print("enter the value of radius= ");
+                r=sc.nextDouble();
+        double circumference = 2 * Math.PI * r;
+        double area = Math.PI * Math.pow(r,2);
+        double volume=(4.0/3.0) * Math.PI* Math.pow(r,3);
 
-        System.out.print("what is your gpa?");
-        double gpa = sc.nextDouble();
-
-        System.out.print("are you a student? (true/false): ");
-        boolean isStudent = sc.nextBoolean();
-
-        System.out.println("hello " + name);
-        System.out.println("your age: " + age);
-        System.out.println("your gpa is: " + gpa);
-         System.out.println("Student: " + isStudent);
+        System.out.println("circumference = "+ circumference);
+        System.out.println("volume = "+ volume);
+        System.out.println("area = "+ area);
 
         sc.close();
 
