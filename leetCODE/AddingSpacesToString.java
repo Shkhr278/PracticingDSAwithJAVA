@@ -1,6 +1,6 @@
 class AddingSpacesToString {
     public static String addSpaces(String s, int[] spaces) {
-        if (s.length() == 0) { // Fixed condition for an empty string
+        if (s.isEmpty()) { // Fixed condition for an empty string
             return "";
         }
 
@@ -22,8 +22,7 @@ class AddingSpacesToString {
 
     public static void main(String[] args) {
         // Test cases
-        System.out.println(addSpaces("LeetcodeHelpsMeLearn", new int[] { 8, 13, 15 })); // Output: "Leetcode Helps Me
-                                                                                        // Learn"
+        System.out.println(addSpaces("LeetcodeHelpsMeLearn", new int[] { 8, 13, 15 })); // Output: "Leetcode Helps Me Learn"
         System.out.println(addSpaces("icodeinpython", new int[] { 1, 5, 7, 9 })); // Output: "i code in py thon"
         System.out.println(addSpaces("spacing", new int[] { 0, 1, 2, 3, 4, 5, 6 })); // Output: " s p a c i n g"
     }

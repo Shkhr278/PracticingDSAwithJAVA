@@ -29,7 +29,7 @@ public class IntegerFrequency {
         while (l<n.length()) {
 
             //Extracting ASCII value of each number character
-            int r=(int)n.charAt(l);
+            int r= n.charAt(l);
 
             //Incrementing the frequency of that number
             freq[r-48]++;       
